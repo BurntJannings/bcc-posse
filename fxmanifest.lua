@@ -20,5 +20,6 @@ client_scripts {
 
 
 export 'CheckPosseArea'
+export 'CreatePosseExport'
 
 version '1.1.2'
