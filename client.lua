@@ -247,6 +247,10 @@ RegisterNetEvent('bcc-posse:ViewMembersMenu', function(result)
 		end)
 end)
 
+function CreatePosseExport(possename)
+	TriggerServerEvent('bcc-posse:createposse', possename)
+end
+
 function GetClosestPlayer()
 	local players, closestDistance, closestPlayer = GetActivePlayers(), -1, -1
 	local playerPed, playerId = PlayerPedId(), PlayerId()
